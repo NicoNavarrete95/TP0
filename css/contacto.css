@@ -65,7 +65,7 @@ a{
                 }
         
         .texto-principal{
-            height: 580px;
+            height: 150px;
             display: flex;
             align-items: center;
         }
@@ -90,12 +90,11 @@ a{
             flex-flow: row wrap;
         }
             .article{
-                flex:1 1 40%;
+                flex:auto;
                 color: #444;
                 font-size: 13px;
                 letter-spacing: 1px;
                 margin: 10px 10px 0 0px;
-                flex: 1 1 45%;
                 background: #ececec;
             }
             .article img{
@@ -126,10 +125,10 @@ a{
                 font-size: 25px;
                 text-transform: uppercase;
                 padding: 0px 0 10px 0;
-                color: #fff;
+                color:#444;
             }
         .aside{
-            flex:1 1 auto;
+            flex: auto;
             margin: 10px 5px 10px 0;
         }
         .aside img{

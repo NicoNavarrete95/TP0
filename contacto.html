@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <title>CEFYBO</title>
+    <link rel="icon" href="imgs/descarga.ico">
+    <script src="https://kit.fontawesome.com/493a2415dd.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contacto.css">
+    <script src="js/scripst.js"></script>
+</head>
+
+<body>
+    <div class="padre">
+        <header class="header">
+            <div class="menu margen-interno">
+                <div class="logo">
+                    <a href="https://www.cefybo.org.ar/"><img src="imgs/logo-cefybo-uba.png" alt=""></a>
+                </div>
+                <nav class="nav">
+                    <a href="#"><i class="fa-solid fa-house"></i><span class="off">Inicio</span></a>
+                    <a href="#"><i class="fa-solid fa-user"></i><span class="off">Nosotros</span></a>
+                    <a href="#"><i class="fa-solid fa-book"></i><span class="off">Curso</span></a>
+                    <a href="#"><i class="fa-solid fa-flask"></i><span class="off">Laboratorio</span></a>
+                    <a href="#"><i class="fa-solid fa-phone"></i><span class="off">Contacto</span></a>
+                </nav>
+            </div>
+            <div class="texto-principal margen-interno">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia hic autem voluptate voluptas cumque, quo asperiores libero odit, iusto enim fugiat saepe debitis recusandae labore perspiciatis voluptatum optio consectetur. Obcaecati asperiores soluta a. Enim possimus quibusdam inventore nostrum nihil eveniet, iusto consequuntur a et voluptas totam! Dolor, eligendi. Dolore, id?</h1>
+            </div>
+        </header>
+        <section class="section margen-interno">
+            <div class="articulos">
+                <article class="article">
+                    <!-- <img src="imgs/3-lung-cells-fluorescent-micrograph-dr-torsten-wittmann.jpg" alt=""> -->
+                    <!-- <h3>24 de Mayo 2022</h3> -->
+                    <h2>Formulario de contacto</h2>
+                    
+                    <form name="fvalida">
+                        <table>
+                            <tr>
+                                <td><label for="nombre">Nombre: </label><input type="text" name="nombre"
+                                    placeholder="Ingrese su nombre aqui..."> <br><br></td>
+                            </tr>
+                            <tr>
+                                <td> 
+                                    <label for="apellido">Apellido: </label><input  type="text" name="lastname"
+                                    placeholder="Ingrese su apellido "> <br><br>
+                                </td>
+                            <tr>
+                                <td>
+                                    <label for="dirección">Direccion: </label>
+                                    <input type="text" name="address" placeholder="Ingrese su dirección "> <br><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="edad">Edad: </label>
+                                    <input type="number" name="edad" placeholder="Ingrese su edad" maxlength="2"> <br><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="dni">DNI: </label>
+                                    <input type="number" name="ident" placeholder="Ingrese el numero de documento"><br><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="ciudad">Ciudad: </label>
+                                    <input type="text" name="city" value="C.A.B.A."> <br><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="codigo">Código Postal: </label>
+                                    <input type="number" name="postal" placeholder="Ingrese su codigo postal "> <br> <br> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="telefono">Telefono: </label>
+                                    <input type="tel" name="telefono" placeholder="ingrese su telefono "> <br><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="nacimiento">Fecha Nac.(mm/dd/yyyy) FALTA VALIDA: </label> 
+                                    <input type="date" name="birthdate"> <br><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="mail">Mail: </label>
+                                    <input type="email" name="mail" placeholder="Ingrese su email "> <br><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="genero">Genero: REVISAR </label>
+                                    <input type="radio" name="sexo" id="hombre" value="Hombre"> Hombre
+                                    <input type="radio" name="sexo" id="mujer" value="Mujer"> Mujer 
+                                    <input type="radio" name="sexo" id="otro" value="Otro"> Otro <br><br>
+                                </td>
+                            <tr>
+                                <td>
+                                    <label for="estudios">Nivel de educación alcanzado:</label>
+                                    <select id="estudios" name="estudios">
+                                        <option value="prepro">Pregrado en proceso</option>
+                                        <option value="prefin">Pregrado finalizado</option>
+                                        <option value="docpro">Doctorado en proceso</option>
+                                        <option value="docfin">Doctorado finalizado</option>
+                                        <option value="postpro">Postdoctorado en proceso</option>
+                                        <option value="postfin">Postdoctorado en finalizado</option> br*2
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <br><label for="comentarios">Comentarios:</label> 
+                                    <br><textarea name="comentarios" rows="10" cols="30"></textarea>
+                                </td>
+                            </tr>
+                                    
+                        </select>
+                        <br><br>  
+                                </td>
+                            </tr>
+                                
+                                <td colspan="2" align="center"><input type="button" value="Enviar" onclick="valida_envia()"> 
+                                    <button type="reset">Borrar</button>
+                                </td>
+                                
+                            </tr>
+                        </table>
+                        </table>
+                    </form>
+                </div>                 
+                    </div>
+            <aside class="aside">
+                <div class="publicidad">
+                    <h4>Aside</h4>
+                    <p>AGREGAR MAPA, DIRECCIÓN ETC</p>
+                </div>
+            </aside>
+        </section>
+        <footer class="footer margen-interno">
+            <nav class="pie"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ratione.</a> </nav>
+        </footer>
+    </div>
+</body>
+
+</html>
