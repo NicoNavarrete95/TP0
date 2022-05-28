@@ -1,0 +1,400 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.margen-interno{
+    padding: 0 50px;
+}
+    .header{
+        background: url(../imgs/Inmunoflu.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+        animation: movimiento 20s infinite linear alternate; 
+    }
+    @keyframes movimiento{
+        from{
+            background-position: bottom left;
+        }
+        to{
+            background-position: top right;
+        }
+    }
+        .menu{
+            background: rgba(255, 255, 255, 0.7);
+            display: flex;
+            flex-flow: row nowrap;
+            height: 105px;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            border: 2px solid #fff;
+        }
+            .logo{
+                flex:1 1 auto;               
+            }
+                
+            .nav{
+                flex:5 1 auto;
+            }
+                .nav a{
+                    color: rgb(83, 81, 81);
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+                    
+                }
+                .nav a:hover{
+                    color: #0AA1DD;
+                }
+        
+        .texto-principal{
+            height: 150px;
+            display: flex;
+            align-items: center;
+        }
+            h1{
+                /* background: #2155CD; */
+                font-family: 'Lora', serif;
+                font-size: 21px;
+                color: #fff;
+                font-weight: 300;
+                text-align: center;
+                line-height: 1.6;
+            }
+
+    .section{
+        background: #f7f7f7;
+        display: flex;
+    }
+        .articulos{
+            background: #f7f7f7;
+            flex:1 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .article{
+                flex:auto;
+                color: #444;
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin: 10px 10px 0 0px;
+                background: #ececec;
+            }
+            .article img{
+                width: 100%;
+            }
+            
+            .article a{
+                color: #fff;
+                font-size: 13px;
+                padding: 10px;
+                background: #000;
+                margin: 10px 0;
+                display: inline-block;
+            }
+
+            .article a:hover{
+                background: #546cc3;
+            }
+            
+            h3{
+                color: #fff;
+                font-size: 13px;
+                padding: 10px 0;
+                margin-top: -80px;
+            }
+
+            h2{
+                font-size: 25px;
+                text-transform: uppercase;
+                padding: 0px 0 10px 0;
+                color:#444;
+            }
+        .aside{
+            flex: auto;
+            margin: 10px 5px 10px 0;
+        }
+        .aside img{
+            width: 100%;
+        }
+        h4{
+            background: #000;
+            color: #fff;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+            /* .publicidad{
+
+            } */
+
+            .fusion-footer{
+                background: #444;
+                background-position: center;
+                background-attachment: contain;
+                background-size: cover;
+                display: flex;
+                flex-flow: column nowrap;
+                /* justify-content: center; */
+                /* align-items: center; */
+            }
+        
+                .footer{
+                background: #363839;
+                display: block;
+                justify-content: center;        
+                padding: 30px 30px 30px 30px;
+                border-top: 12px solid #e9eaee;
+                position: relative;
+                /* border-top:#0AA1DD 10px; */
+                }
+        
+                    .fusion-row{
+                        background: #546cc3;
+                        display:flex;
+                        flex-flow:nowrap;
+                        align-items: center;
+                        
+                    }
+        
+                        .fusion-colums{
+                            flex:auto;
+                            /* background: #0AA1DD; */
+                            display:flex;
+                            flex-flow: row nowrap;
+                            align-items: center;
+                            text-align: center;
+                            box-sizing: border-box;
+                            
+                            
+                        }
+        
+                            .fusion-col1{
+                                background: #363839;
+                                flex: auto;
+                                width: 100%;
+                                display: block;
+                                align-content: center;
+                                text-align: center;
+                                                                         
+                            }
+        
+                            .logo-footer1 img{
+                                text-align:center;
+                                max-width: 100%;
+                                flex: auto;
+                                vertical-align: top;
+                                height: auto;
+                        
+                            }
+                      
+                                .fusion-col1-content h3{
+                                    color: #8c8989;
+                                    font-size: 13px;
+                                    margin: 10px 5px 10px 0;
+                                    text-align: justify;
+                                                                                           
+                                }
+        
+                                .fusion-col1-content{
+                                    color: rgb(167, 160, 160);
+                                    font-size: 13px;
+                                    letter-spacing: 1px;
+                                    text-align: justify;
+                                    padding-left: 10%;                                               
+                                }
+                               
+                                              
+                            .fusion-col2{
+                                background: #363839;
+                                flex: auto;
+                                width: 100%;
+                                height: 100%;
+                                justify-content: center;
+                                line-height: 20px;
+                                display: block;              
+                            }
+        
+                                .logo-footer2 img{
+                                    vertical-align: top;
+                                    max-width: 100%;
+                                    text-size-adjust: 100%;
+                                    /* height: auto; */
+                                    text-align: center;
+                                }
+        
+                                .logo-footer3 img{
+                                    vertical-align: top;
+                                    max-width: 100%;
+                                    text-size-adjust: 100%;
+                                    /* height: auto; */
+                                    text-align: center;
+                                }
+                                .logo-footer4 img{
+                                    vertical-align: top;
+                                    max-width: 100%;
+                                    text-size-adjust: 100%;
+                                    /* height: auto; */
+                                    text-align: center;
+                                }
+                                .logo-footer5 img{
+                                    vertical-align: top;
+                                    max-width: 100%;
+                                    text-size-adjust: 100%;
+                                    /* height: auto; */
+                                    text-align: center;
+                                }
+        
+        
+                            .fusion-col3{
+                                background: #363839;
+                                flex:auto;
+                                /* width: 100%;
+                                height: 100%; */
+                                display: flex;
+                                width:auto;
+                                height: auto;
+                                text-align:left;
+                                max-width: 100%;
+                                vertical-align: top;
+                                height: auto;                
+                            }
+        
+        
+                .pie{
+                    /* background: #F7FF93 */
+                    text-align:center;
+                }
+                .pie a{
+                    color: #fff;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+                }
+            
+        @media all and (max-width: 1120px){
+            .section{
+                flex-direction: column;
+            }
+            .menu{
+                flex-direction: column;
+                height: auto;
+            }
+            .aside{
+                display: flex;
+                justify-content: center;
+            }
+            h1{
+                font-size: 15px;
+            }
+            .texto-principal{
+                height: 450px;
+            }
+            /* .footer{
+                flex-direction: column;
+                height: auto; */
+            /* } */
+            /* .fusion-colums{
+                flex-direction: column;
+                height: auto;
+            } */
+        }
+        
+        @media all and (max-width:960px){
+            .footer{
+                flex-direction: column;
+                height: auto;
+            }
+            .fusion-colums{
+                flex-direction: column;
+                height: auto;
+                justify-content: center;
+                
+            }
+            .fusion-col1 h3{
+                text-align: center;
+            }
+            .fusion-col1-content{
+                text-align: center;
+                padding-left: 0;
+            }
+            .fusion-col2{
+                margin-top: 20px;
+            }
+            .fusion-col3{
+                margin-top: 20px;
+            }
+        }
+        
+        
+        @media all and (max-width:760px){
+            .articulos{
+                flex-direction: column;
+            }
+            .footer{
+                    flex-direction: column;
+                    height: auto;
+                }
+                .fusion-colums{
+                    flex-direction: column;
+                    height: auto;
+                }
+            }
+        
+        @media all and (max-width:690px){
+           .off{
+               display: none;
+           }
+           .nav a{
+               font-size: 25px;
+           }
+           .footer{
+            flex-direction: column;
+            height: auto;
+            }
+            .fusion-colums{
+                flex-direction: column;
+                height: auto;
+            }
+        }
+        
+        @media all and (max-width:400px){
+            .aside{
+                flex-direction: column;
+            }
+            .footer{
+                flex-direction: column;
+                height: auto;
+            }
+            .fusion-col3 iframe{
+                width: 300px;
+                height: 200px;
+            }
+        }
+        
+        @media all and (max-width:400px){
+            .aside{
+                flex-direction: column;
+            }
+            .footer{
+                flex-direction: column;
+                height: auto;
+            }
+        }
