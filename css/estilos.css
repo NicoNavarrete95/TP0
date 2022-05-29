@@ -72,8 +72,8 @@ a{
         }
             h1{
               /* background: #2155CD; */
-              font-family: 'Montserrat', 
-              font-size: 19px;
+              font-family: 'Montserrat'; 
+              font-size: 30px;
               color: #fff;
               font-weight: 700;
               text-align: center;
@@ -90,6 +90,9 @@ a{
             flex:70%;
             display: flex;
             flex-flow: row wrap;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
         }
             .article{
                 flex:1 1 40%;
@@ -99,6 +102,9 @@ a{
                 margin: 10px 10px 0 0px;
                 flex: 1 1 45%;
                 background: #ececec;
+                align-items: center;
+                text-align: center;
+                box-sizing: border-box;
             }
             .article img{
                 width: 100%;
@@ -130,6 +136,9 @@ a{
                 padding: 0px 0 10px 0;
                 color: #fff;
             }
+
+
+
         .aside{
             flex:30%;
             margin: 10px 5px 10px 0;
