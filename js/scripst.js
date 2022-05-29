@@ -59,6 +59,16 @@ function valida_envia() {
         return 0;
     } 
 
+    function validarFormatoFecha (campo) {
+        var RegExPattern = /^\d{1,2}\/\d{1,2}$/;
+        if ((campo.match(RegExPattern)) && (campo!="")){
+            return true;
+            } else {
+                return false;
+            }
+           
+    }
+
     mail = document.fvalida.mail.value
     mail = validarEmail(mail)
     document.fvalida.mail.value = mail
@@ -67,7 +77,6 @@ function valida_envia() {
         document.fvalida.mail.focus()
         return 0;
     }
-        
 }
 function validarEntero(valor) {
     valor = parseInt(valor)
