@@ -50,7 +50,7 @@ a{
             }
                 
             .nav{
-                flex:5 1 auto;
+                flex:0 1 auto;
             }
                 .nav a{
                     color: rgb(83, 81, 81);
